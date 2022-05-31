@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
     --orange-text: #b67c34;
     --red: #a62f26;
     --white: #dadada;
+    --white-border: #b2b2b2;
     --black: #212121;
     --black-border: #161515;
     --black-mirror: rgba(30, 30, 30, 0.60);

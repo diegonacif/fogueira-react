@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container } from './styles';
-import Img from '../../assets/Fogueira.jpg';
+import Img from '../../../assets/Fogueira.jpg';
 
-function Cards() {
+function MainCard() {
   return (
     <Container>
       <img src={Img} alt="homem de costas, sentado em frente a uma fogueira" />
@@ -11,4 +11,4 @@ function Cards() {
   );
 }
 
-export default Cards;
+export default MainCard;

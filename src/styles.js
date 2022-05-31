@@ -11,3 +11,10 @@ export const Container = styled.main`
   background-attachment: fixed;
   padding-top: 1rem;
 `;
+
+export const World = styled.div`
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  width: 100vw;
+  height: max-content;
+`

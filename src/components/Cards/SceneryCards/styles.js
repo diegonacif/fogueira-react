@@ -2,29 +2,28 @@ import styled from 'styled-components';
 
 export const Container = styled.div `
   display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  flex-direction: column;
   width: 95vw;
-  max-width: 20rem;
-  height: max-content;
-  color: var(--orange-text);
+  max-width: 100%;
   background-color: var(--black-mirror);
-  padding: 0.75rem 0.5rem;
-  border-radius: 1rem;
+  padding: 0.5rem;
+  margin-top: 3rem;
+  border-radius: 3.5rem 3.5rem 1rem 1rem;
   border: 3px groove var(--black-border);
   filter: drop-shadow(rgb(0, 0, 0) 15px 15px 15px);
 
-  h1 {
-    font-size: 1.8rem;
-    font-family: Helvetica;
+  img {
+    width: 100%;
+    border: 1px groove var(--white-border,);
+    border-radius: 3.5rem 3.5rem 1rem 1rem;
   }
 
   p {
-    color: var(--white);
     margin-top: 1rem;
-    text-align: center;
+    color: var(--white);
     font-size: calc(1rem + 0.2vw);
+    text-align: justify;
   }
 `

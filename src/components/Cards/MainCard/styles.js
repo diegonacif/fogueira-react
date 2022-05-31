@@ -5,8 +5,7 @@ export const Container = styled.div `
   align-items: center;
   margin: 0 auto;
   flex-direction: column;
-  width: 95vw;
-  max-width: 30rem;
+  width: clamp(15rem, 95%, 40rem);
   background-color: var(--black-mirror);
   padding: 0.5rem;
   margin-top: 3rem;

@@ -1,9 +1,11 @@
 import styled from 'styled-components';
-import hallwayImg from './assets/hallway1.jpg'
+import hallwayImg from './assets/hallway1.jpg';
+import { devices } from './assets/devices';
 
 export const Container = styled.main`
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   background: url(${hallwayImg});
   background-position: center;
   background-size: cover;
@@ -14,7 +16,19 @@ export const Container = styled.main`
 
 export const World = styled.div`
   display: grid;
-  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-columns: 1fr;
   width: 100vw;
   height: max-content;
+
+  @media only screen and (min-width:${devices.tablet}) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media only screen and (min-width:${devices.laptop}) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media only screen and (min-width:${devices.desktop}) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 `

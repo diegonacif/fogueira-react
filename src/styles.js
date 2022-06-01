@@ -11,7 +11,7 @@ export const Container = styled.main`
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  padding-top: 1rem;
+  /* padding-top: 1rem; */
 `;
 
 export const World = styled.div`

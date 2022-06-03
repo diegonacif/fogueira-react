@@ -15,20 +15,33 @@ export const Container = styled.main`
 `;
 
 export const World = styled.div`
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  column-gap: 1rem;
   width: 100vw;
   height: max-content;
 
   @media only screen and (min-width:${devices.tablet}) {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @media only screen and (min-width:${devices.laptop}) {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  @media only screen and (min-width:${devices.desktop}) {
-    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 1rem;
   }
 `
+
+// export const World = styled.div`
+//   display: grid;
+//   grid-template-columns: 1fr;
+//   width: 100vw;
+//   height: max-content;
+
+//   @media only screen and (min-width:${devices.tablet}) {
+//     grid-template-columns: 1fr 1fr;
+//   }
+
+//   @media only screen and (min-width:${devices.laptop}) {
+//     grid-template-columns: 1fr 1fr 1fr;
+//   }
+
+//   @media only screen and (min-width:${devices.desktop}) {
+//     grid-template-columns: 1fr 1fr 1fr;
+//   }
+// `

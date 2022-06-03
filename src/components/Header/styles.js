@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 import { devices } from '../../assets/devices';
 
-import Image from '../../assets/torch.png';
-
 export const Container = styled.div`
   position: relative;
   display: flex;
@@ -10,26 +8,24 @@ export const Container = styled.div`
   align-items: center;
   width: 100vw;
   height: 4.5rem;
-  padding: 0 4rem;
+  padding: 0 2rem;
+
   background-color: var(--black-mirror);
   filter: drop-shadow(rgb(0, 0, 0) 15px 15px 15px);
   color: var(--orange-text);
 
   h1 {
-    font-size: 2.5rem;
-    transition: all 0.3s;
-    &:hover {
-      transform: scale(1.1);
-      transition: all 0.3s;
-    }
+    font-size: 1.9rem;
   }
 
   img {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 7rem;
+    &#torch-image {
+      display: none;      
+    }
+
+    &#drive-folder {
+      width: 3rem;
+    }
   }
 
   button {
@@ -45,6 +41,30 @@ export const Container = styled.div`
       cursor: pointer;
       color: var(--white);
       transition: all 0.3s;
+    }
+  }
+
+  @media only screen and (min-width:${devices.tablet}) {
+    padding: 0 3rem;
+    transition: all 0.3s;
+  }
+
+  @media only screen and (min-width:${devices.laptop}) {
+    padding: 0 3rem;
+    transition: all 0.3s;
+  }
+
+  @media only screen and (min-width:${devices.desktop}) {
+    padding: 0 3rem;
+    transition: all 0.3s;
+
+    img#torch-image {
+      display: inherit;
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 40rem;
     }
   }
 `

@@ -14,7 +14,6 @@ function App() {
     <Container>
       <GlobalStyle />
       <Header />
-      <MainTitle />
       <MainCard />
       <World>
         <Blood />

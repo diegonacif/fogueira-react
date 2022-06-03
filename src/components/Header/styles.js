@@ -50,12 +50,12 @@ export const Container = styled.div`
   }
 
   @media only screen and (min-width:${devices.laptop}) {
-    padding: 0 3rem;
+    padding: 0 4rem;
     transition: all 0.3s;
   }
 
   @media only screen and (min-width:${devices.desktop}) {
-    padding: 0 3rem;
+    padding: 0 5rem;
     transition: all 0.3s;
 
     img#torch-image {

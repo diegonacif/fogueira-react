@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const Container = styled.div `
 
-  width: 6rem;
-  height: 8rem;
+  width: 4.5rem;
+  /* height: 8rem; */
 
   img {
     width: 100%;

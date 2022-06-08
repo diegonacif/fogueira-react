@@ -3,7 +3,7 @@ import { Container } from './styles';
 import Img from '../../../assets/Fogueira.jpg';
 import RuneButton from '../../RuneButton/RuneButton';
 
-function Sand() {
+function SandCard() {
   return (
     <Container>
       <img src={Img} alt="homem de costas, sentado em frente a uma fogueira" />
@@ -13,4 +13,4 @@ function Sand() {
   );
 }
 
-export default Sand;
+export default SandCard;

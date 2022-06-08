@@ -3,9 +3,9 @@ import GlobalStyle from './styles/globalStyles';
 import { Container, World } from './styles';
 
 import MainTitle from './components/MainTitle/MainTitle';
-import Blood from './components/Cards/SceneryCards/Blood';
-import Sand from './components/Cards/SceneryCards/Sand';
-import Road from './components/Cards/SceneryCards/Road';
+import BloodCard from './components/Cards/SceneryCards/BloodCard';
+import SandCard from './components/Cards/SceneryCards/SandCard';
+import RoadCard from './components/Cards/SceneryCards/RoadCard';
 import Header from './components/Header/Header';
 
 function App() {
@@ -16,9 +16,9 @@ function App() {
       <Header />
       <MainCard />
       <World>
-        <Blood />
-        <Sand />
-        <Road />
+        <BloodCard />
+        <SandCard />
+        <RoadCard />
       </World>
     </Container>
   )

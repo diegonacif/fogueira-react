@@ -11,7 +11,7 @@ export const Container = styled.div`
   padding: 0 2rem;
 
   background-color: var(--black-mirror);
-  filter: drop-shadow(rgb(0, 0, 0) 15px 15px 15px);
+  /* filter: drop-shadow(rgb(0, 0, 0) 15px 15px 15px); */
   color: var(--orange-text);
 
   h1 {
@@ -19,6 +19,7 @@ export const Container = styled.div`
   }
 
   img {
+    
     &#torch-image {
       display: none;      
     }

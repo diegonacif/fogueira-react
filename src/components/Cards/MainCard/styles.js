@@ -11,7 +11,7 @@ export const Container = styled.div `
   margin-top: 3rem;
   border-radius: 3.5rem 3.5rem 1rem 1rem;
   border: 3px groove var(--black-border);
-  filter: drop-shadow(rgb(0, 0, 0) 15px 15px 15px);
+  /* filter: drop-shadow(rgb(0, 0, 0) 15px 15px 15px); */
 
   img {
     width: 100%;

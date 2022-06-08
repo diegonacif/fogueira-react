@@ -12,7 +12,7 @@ function RuneButton({ page }) {
 
   return (
     <Container>
-      <img src={rune} alt="runa" onClick={() => handleClick()}/>
+      <img src={rune} alt="runa" id="runeImg" onClick={() => handleClick()}/>
     </Container>
   );
 };

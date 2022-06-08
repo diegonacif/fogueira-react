@@ -5,7 +5,7 @@ export const Container = styled.div `
   width: 4.5rem;
   /* height: 8rem; */
 
-  img {
+  img#runeImg {
     width: 100%;
     height: 100%;
     border: 0;

@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
     --white-border: #b2b2b2;
     --black: #212121;
     --black-border: #161515;
-    --black-mirror: rgba(30, 30, 30, 0.60);
+    --black-mirror: rgba(12, 12, 12, 0.75);
     --gray: #4b4b4b;
     --gray-90: rgba(75, 75, 75, 0.9);
   }

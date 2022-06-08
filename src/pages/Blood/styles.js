@@ -1,6 +1,13 @@
 import styled from 'styled-components';
 
-export const Container = styled.div `
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+`
+
+export const Section = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,7 +19,6 @@ export const Container = styled.div `
   margin-top: 3rem;
   border-radius: 3.5rem 3.5rem 1rem 1rem;
   border: 3px groove var(--black-border);
-  /* filter: drop-shadow(rgb(0, 0, 0) 15px 15px 15px); */
 
   img {
     width: 100%;

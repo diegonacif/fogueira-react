@@ -5,7 +5,7 @@ import RuneButton from '../../RuneButton/RuneButton';
 
 
 
-function Road() {
+function RoadCard() {
   return (
     <Container>
       <img src={Img} alt="homem de costas, sentado em frente a uma fogueira" />
@@ -15,4 +15,4 @@ function Road() {
   );
 }
 
-export default Road;
+export default RoadCard;

@@ -1,6 +1,7 @@
 import MainCard from './components/Cards/MainCard/MainCard';
 import GlobalStyle from './styles/globalStyles';
 import { Container, World } from './styles';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import MainTitle from './components/MainTitle/MainTitle';
 import BloodCard from './components/Cards/SceneryCards/BloodCard';

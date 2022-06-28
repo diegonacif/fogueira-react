@@ -8,14 +8,15 @@ export const Container = styled.div`
   align-items: center;
   width: 100vw;
   height: 4.5rem;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
 
-  background-color: var(--black-mirror);
+  background-color: var(--gray-dark);
   /* filter: drop-shadow(rgb(0, 0, 0) 15px 15px 15px); */
   color: var(--orange-text);
 
   h1 {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
+    margin: 0;
   }
 
   img {

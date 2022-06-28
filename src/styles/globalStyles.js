@@ -4,6 +4,7 @@ const GlobalStyle = createGlobalStyle`
   :root {
     --green: #3c735f;
     --yellow: #f2cb05;
+    --yellow-title: #f8ffa4;
     --orange: #f2a922;
     --orange-text: #b67c34;
     --red: #a62f26;
@@ -12,7 +13,10 @@ const GlobalStyle = createGlobalStyle`
     --black: #212121;
     --black-border: #161515;
     --black-mirror: rgba(12, 12, 12, 0.75);
-    --gray: #4b4b4b;
+    --gray: #202020;
+    --gray-dark: #181818;
+    --gray-light: #373737;
+
     --gray-90: rgba(75, 75, 75, 0.9);
   }
 

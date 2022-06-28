@@ -12,12 +12,11 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 4.5rem;
   padding: 0 1rem;
 
-  background-color: var(--black-mirror);
-  /* filter: drop-shadow(rgb(0, 0, 0) 15px 15px 15px); */
+  background-color: var(--gray-dark);
   color: var(--orange-text);
 
   h1 {

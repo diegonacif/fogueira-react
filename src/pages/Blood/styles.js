@@ -1,10 +1,64 @@
 import styled from 'styled-components';
+import { devices } from '../../assets/devices';
+
+export const MainContainer = styled.div `
+  display: grid;
+  grid-template-columns: auto 20rem;
+  width: 100vw;
+  height: 100%;
+`
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
+  width: 100%;
+     
+  /* @media only screen and (min-width: ${devices.desktop}) {
+    display: grid;
+    grid-template-columns: auto 20rem;
+    background-color: green;
+  } */
+  
+`
+
+export const SideBar = styled.div `
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  height: 100vh;
+  background-color: var(--white);
+  padding: 1rem 0.5rem;
+
+  align-items: center;
+  justify-content: space-evenly;
+
+  
+  h2 {
+    font-size: 1.7rem;
+  }
+  
+  span {
+    position: relative;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 3.5rem;
+      left: 50%;
+      transform: translateX(-50%);      
+      
+      width: 15rem;
+      height: 2px;
+      background-color: var(--black);
+    }
+  }
 `
 
 export const Section = styled.div`
@@ -20,6 +74,27 @@ export const Section = styled.div`
   border-radius: 3.5rem 3.5rem 1rem 1rem;
   border: 3px groove var(--black-border);
 
+  h2 {
+    color: var(--yellow-title);
+    margin: 1rem 0 0 0;
+    font-size: calc(1.5rem + 0.2vw);
+    line-height: 1rem;
+
+    
+  }
+
+  &#overView {
+    border-radius: 1rem;
+
+    img {
+      border-radius: 1rem;
+    }
+
+    &:last-child {
+      margin-bottom: 1rem;
+    }
+  }
+
   img {
     width: 100%;
     border: 1px groove var(--white-border,);
@@ -31,5 +106,22 @@ export const Section = styled.div`
     color: var(--white);
     font-size: calc(1rem + 0.2vw);
     text-align: justify;
+  }
+`
+
+export const Footer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 2.5rem;
+  background-color: var(--gray-dark);
+  /* margin-top: 3rem; */
+
+  h2 {
+    margin: 0;
+    text-align: center;
+    color: var(--white);
+    font-size: 1.2rem;
   }
 `

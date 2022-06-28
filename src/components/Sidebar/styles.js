@@ -3,6 +3,10 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
 
+  hr.divider {
+    margin: 0;
+  }  
+
   button {
     border: 0;
     background-color: transparent;
@@ -24,5 +28,9 @@ export const Section = styled.div`
 
   span {
     font-weight: bold;
+  }
+
+  img {
+    width: 6rem;
   }
 `

@@ -1,21 +1,17 @@
 import React, { useEffect } from "react";
 import { Container, Section, Footer } from './styles';
 
-import bloodImg from '../../assets/ultimo_sangue.jpg';
-import SceneryHeader from "../../components/SceneryHeader/SceneryHeader";
-import RuneButton from '../../components/RuneButton/RuneButton';
+import bloodImg from '../../../assets/ultimo_sangue.jpg';
+import RuneButton from '../../../components/RuneButton/RuneButton';
+import { Link } from "react-router-dom";
 
 function BloodHome () {
-  // useEffect (() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect (() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
-    <Container>
-      <SceneryHeader
-        title="Até o Último Sangue"
-        sideTitle="Guia de Sobrevivência"
-      />
+    <Container>    
       <div className="sections">
         <Section>
           <img src={bloodImg} alt="imagem do cenário" />
@@ -31,12 +27,11 @@ function BloodHome () {
         <Section>
           <img src={bloodImg} alt="imagem do cenário" />
           <p>You still need to eat, drink and sleep as before. The Rules of this Trial are simple: Reach the Destination. There you'll find a portal that leads you back home. You'll be allowed to bring any willing characters with you and you'll keep any advantages. Objects and Items you've attained on this journey will disappear though unless stated otherwise. You still need to eat, drink and sleep as before. The Rules of this Trial are simple: Reach the Destination. There you'll find a portal that leads you back home.</p>
-          <RuneButton />
+          <Link to="/">
+            <RuneButton />
+          </Link>
         </Section>
-      </div>
-      <Footer>
-        <h2>Fallout - Metro - Warhammer40k</h2>
-      </Footer>
+      </div>    
     </Container>
   );
 };

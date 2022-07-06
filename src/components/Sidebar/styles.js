@@ -33,4 +33,9 @@ export const Section = styled.div`
   img {
     width: 6rem;
   }
+
+  a, a:hover, a:focus, a:active {
+    color: inherit;
+    text-decoration: none;
+  }
 `

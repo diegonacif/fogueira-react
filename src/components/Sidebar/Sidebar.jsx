@@ -6,6 +6,7 @@ import { Container, Section } from './styles';
 import GlobalStyle from '../../styles/globalStyles';
 
 import driveFolder from '../../assets/drive-folder.ico'
+import { Link } from 'react-router-dom';
 
 
 function Sidebar({ title }) {
@@ -34,12 +35,17 @@ function Sidebar({ title }) {
           <hr className="mt-0 mb-0" />
           <Offcanvas.Body>
             <Section>
-              <span>Início</span>
-              <span>Cenário</span>
-              <span>Coisa 3</span>
-              <span>Coisa 4</span>
-              <span>Coisa 5</span>
-              <span>Coisa 6</span>
+              <Link to="/blood">
+                <span>Início</span>
+              </Link>
+              <Link to="/blood/scenery">
+                <span>Cenário</span>              
+              </Link>         
+              <span>Ambientação</span>
+              <span>Gangues e Milícias</span>
+              <span>Raças</span>
+              <span>Criaturas</span>
+              <span>Conceitos</span>
               <img src={driveFolder} alt="pasta do google drive" onClick={handleDriveLink}/>
             </Section>
           </Offcanvas.Body>

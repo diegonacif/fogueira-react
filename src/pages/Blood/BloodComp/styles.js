@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { devices } from '../../assets/devices';
+import { devices } from '../../../assets/devices';
 
 export const Container = styled.div`
   display: flex;
@@ -14,13 +14,15 @@ export const Container = styled.div`
     background-color: gray;
     padding-bottom: 3rem;
   }
-     
-  /* @media only screen and (min-width: ${devices.desktop}) {
-    display: grid;
-    grid-template-columns: auto 20rem;
-    background-color: green;
+
+  /* .carousel {
+    margin: 1rem 0;
+
+    img {
+      height: 15rem;
+      width: 100%;
+    }
   } */
-  
 `
 
 export const Section = styled.div`

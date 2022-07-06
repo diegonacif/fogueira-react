@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import App from './App'
 import Blood from './pages/Blood/Blood';
-import BloodHome from './pages/Blood/BloodHome';
+import BloodHome from './pages/Blood/BloodComp/BloodHome';
 import Scenery from './pages/Blood/BloodComp/Scenery';
 
 ReactDOM.createRoot(document.getElementById('root')).render(

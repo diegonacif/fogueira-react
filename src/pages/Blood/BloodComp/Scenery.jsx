@@ -7,11 +7,11 @@ import { Carousel } from 'react-bootstrap';
 
 function Scenery() {
   return (
-    <>
-      <Container>    
+    <Container>
+      <div className="sections">
         <Section>
         <img src={bloodImg} alt="imagem do cenário" />
-        <h2>Areia e Cinzas</h2>
+        <h2>Cenário</h2>
         <p>You still need to eat, drink and sleep as before. The Rules of this Trial are simple: Reach the Destination. There you'll find a portal that leads you back home. You'll be allowed to bring any willing characters with you and you'll keep any advantages. Objects and Items you've attained on this journey will disappear though unless stated otherwise. You still need to eat, drink and sleep as before. The Rules of this Trial are simple: Reach the Destination. There you'll find a portal that leads you back home. You'll be allowed to bring any willing characters with you and you'll keep any advantages. Objects and Items you've attained on this journey will disappear though unless stated otherwise. You still need to eat, drink and sleep as before. The Rules of this Trial are simple: Reach the Destination. There you'll find a portal that leads you back home. You'll be allowed to bring any willing characters with you and you'll keep any advantages. Objects and Items you've attained on this journey will disappear though unless stated otherwise. You still need to eat, drink and sleep as before. The Rules of this Trial are simple: Reach the Destination. There you'll find a portal that leads you back home. You'll be allowed to bring any willing characters with you and you'll keep any advantages. Objects and Items you've attained on this journey will disappear though unless stated otherwise.</p>
         </Section>      
 
@@ -49,8 +49,8 @@ function Scenery() {
             />            
           </Carousel.Item>
         </Carousel>
-      </Container>  
-    </>
+      </div>
+    </Container>  
   )
 }
 

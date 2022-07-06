@@ -28,20 +28,22 @@ function Sidebar({ title }) {
         <button onClick={handleShow}>
           <List />
         </button>
-        <Offcanvas show={show} onHide={handleClose} placement="end">
+        <Offcanvas show={show} onHide={handleClose} placement="end" responsive="sm">
           <Offcanvas.Header closeButton>
             <Offcanvas.Title>{title}</Offcanvas.Title>
           </Offcanvas.Header>
           <hr className="mt-0 mb-0" />
           <Offcanvas.Body>
             <Section>
-              <Link to="/blood">
+              <Link to="/blood" onClick={handleClose}>
                 <span>Início</span>
               </Link>
-              <Link to="/blood/scenery">
+              <Link to="/blood/scenery" onClick={handleClose}>
                 <span>Cenário</span>              
+              </Link>
+              <Link to="/blood/map" onClick={handleClose}>
+                <span>Mapa</span>              
               </Link>         
-              <span>Ambientação</span>
               <span>Gangues e Milícias</span>
               <span>Raças</span>
               <span>Criaturas</span>

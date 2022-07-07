@@ -7,22 +7,21 @@ export const Container = styled.div`
   align-items: center;
   margin: 0 auto;
   width: 100%;
+  min-height: calc(100vh - 7rem);
+  height: 100%;
   
   .sections {
     width: 100%;
+    min-height: calc(100vh - 7rem);
     height: 100%;
     background-color: gray;
     padding-bottom: 3rem;
-  }
 
-  /* .carousel {
-    margin: 1rem 0;
-
-    img {
-      height: 15rem;
+    img#map {
       width: 100%;
+      margin-top: 3rem;
     }
-  } */
+  }
 `
 
 export const Section = styled.div`
@@ -50,6 +49,7 @@ export const Section = styled.div`
     }
   
   }
+  
   h2 {
     color: var(--yellow-title);
     margin: 1rem 0 0 0;

@@ -34,7 +34,14 @@ export const Section = styled.div`
     align-items: center;
     justify-content: center;
     column-gap: 1rem;
-    width: 100%;
+    width: 75%;
+    height: 3rem;
+    border-radius: 0.5rem;
+    
+    &:hover {
+      background-color: var(--white);
+      transition: background-color 0.2s ease-in-out;
+    }
   }
   
   span {

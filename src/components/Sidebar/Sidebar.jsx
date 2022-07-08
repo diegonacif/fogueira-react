@@ -37,7 +37,12 @@ function Sidebar({ title }) {
         <button onClick={handleShow}>
           <List />
         </button>
-        <Offcanvas show={show} onHide={handleClose} placement="end" responsive="sm" variant="dark">
+        <Offcanvas 
+          show={show} 
+          onHide={handleClose} 
+          placement="end" 
+          responsive="sm" 
+        >
           <Offcanvas.Header closeButton>
             <Offcanvas.Title>{title}</Offcanvas.Title>
           </Offcanvas.Header>

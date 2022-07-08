@@ -8,7 +8,7 @@ function Header() {
   return (
     <Container>
       <h1>◆ A FOGUEIRA ◆</h1>
-      <img src={torchImage} alt="image" id="torch-image" />
+      {/* <img src={torchImage} alt="image" id="torch-image" /> */}
       <img src={driveFolder} alt="google drive folder" id="drive-folder" />
       {/* <button>Google Drive</button> */}
     </Container>

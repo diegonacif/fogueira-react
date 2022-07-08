@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { devices } from '../../../assets/devices';
+import img from '../../../assets/theDoor2.png';
 
 export const Container = styled.div`
   display: flex;
@@ -14,7 +15,10 @@ export const Container = styled.div`
     width: 100%;
     min-height: calc(100vh - 7rem);
     height: 100%;
-    background-color: gray;
+    background: url(${img});
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
     padding-bottom: 3rem;
 
     img#map {

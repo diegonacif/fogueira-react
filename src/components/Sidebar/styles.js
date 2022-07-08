@@ -35,7 +35,7 @@ export const Section = styled.div`
     justify-content: center;
     column-gap: 1rem;
     width: 75%;
-    height: 3rem;
+    height: 2rem;
     border-radius: 0.5rem;
     
     &:hover {

@@ -8,12 +8,13 @@ export const Container = styled.div`
     box-sizing: border-box;
   }
 
-  position: relative;
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 4.5rem;
+  height: 4.25rem;
   padding: 0 1rem;
 
   background-color: var(--gray-dark);
